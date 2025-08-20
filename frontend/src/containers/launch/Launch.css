@@ -1,0 +1,9 @@
+.launchNav {
+  height: 12vh;
+}
+
+#offcanvasDarkNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: end !important;
+}

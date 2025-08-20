@@ -1,0 +1,15 @@
+{
+  "name": "bloodstock",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm run start",
+    "backend": "cd backend && npm run start",
+    "deps-frontend": "cd frontend && npm i",
+    "deps-backend": "cd backend && npm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

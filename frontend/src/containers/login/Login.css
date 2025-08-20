@@ -1,0 +1,28 @@
+.login {
+  background-image: url("https://st3.depositphotos.com/13349494/17896/i/450/depositphotos_178964958-stock-photo-container-scattered-pills-stethoscope-isolated.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginMain {
+  height: 55%;
+  width: 25%;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.pass {
+  position: relative;
+}
+
+.eyePass{
+    position: absolute;
+    right: 4%;
+    top: 30%;
+}
+.rememberDiv{
+    display: flex !important;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+}
