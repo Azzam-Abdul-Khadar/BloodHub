@@ -13,7 +13,7 @@ const SignUp = () => {
     if (localStorage.getItem("userData")) {
       navigate("/dashboard");
     }
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="vh-100 p-0 m-0 g-0 signup d-flex justify-content-center align-items-center">
@@ -27,7 +27,7 @@ const SignUp = () => {
               userData[key] = value;
             });
 
-            if (userData.password != userData.rePassword) {
+            if (userData.password !== userData.rePassword) {
               alert("Password and RePassword are not same!");
               return;
             }
@@ -195,7 +195,7 @@ const SignUp = () => {
                     </select>
                   </div>
 
-                  {userType == "user" && (
+                  {userType === "user" && (
                     <div className="mt-2 mx-3">
                       <label className="form-label  d-flex justify-content-start">
                         Blood Group

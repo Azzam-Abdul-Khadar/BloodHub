@@ -3,7 +3,7 @@ const { UserDAO, BloodStockDAO } = require("../dao");
 const addUser = async (req, res, next) => {
   try {
     const { fName, userType, email, contact } = req.body;
-    if (fName || userType || email || contact) {
+    if (fName && userType && email && contact) {
       let [userData] = await UserDAO.addUser(req.body);
       if (userData.userType == "hospital") {
         let bloodGroups = [
