@@ -204,7 +204,7 @@ const UserProfile = () => {
                     </select>
                   </div>
 
-                  {userType == "user" && (
+                  {userType === "user" && (
                     <div className="mt-2 mx-3">
                       <label className="form-label  d-flex justify-content-start">
                         Blood Group

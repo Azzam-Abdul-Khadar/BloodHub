@@ -24,7 +24,7 @@ const sendRequestToHospital = async ({
   quantity,
 }) => {
   const mailOptions = {
-    from: `"Plasma Hub" <${EMAIL_USER}>`,
+    from: `"Blood Hub" <${EMAIL_USER}>`,
     to,
     subject: "Blood stock request recieved",
     text: `${fName ?? ""} ${
@@ -55,7 +55,7 @@ const ackBloodRequestRequest = async ({
   status,
 }) => {
   const mailOptions = {
-    from: `"Plasma Hub" <${EMAIL_USER}>`,
+    from: `"Blood Hub" <${EMAIL_USER}>`,
     to,
     subject: "Blood stock request recieved",
     text: `Dear ${fName ?? ""} ${

@@ -159,23 +159,27 @@ const HospitalDashboard = () => {
         <hr />
         <div className="row">
           <div className="col-md-3 mt-4">
-            <div className="tile display-2 d-flex justify-content-center align-items-center rounded text-white bg-primary">
-              Requests: {totalRequests.total}
+            <div className="tile d-flex justify-content-center align-items-center rounded text-white bg-primary flex-column">
+              <div className="tile-label">Requests</div>
+              <div className="tile-value">{totalRequests.total}</div>
             </div>
           </div>
           <div className="col-md-3 mt-4">
-            <div className="tile display-2 d-flex justify-content-center align-items-center rounded text-white bg-secondary">
-              Pending: {totalRequests.pending}
+            <div className="tile d-flex justify-content-center align-items-center rounded text-white bg-secondary flex-column">
+              <div className="tile-label">Pending</div>
+              <div className="tile-value">{totalRequests.pending}</div>
             </div>
           </div>
           <div className="col-md-3 mt-4">
-            <div className="tile display-2 d-flex justify-content-center align-items-center rounded text-white bg-success">
-              Approved: {totalRequests.approved}
+            <div className="tile d-flex justify-content-center align-items-center rounded text-white bg-success flex-column">
+              <div className="tile-label">Approved</div>
+              <div className="tile-value">{totalRequests.approved}</div>
             </div>
           </div>
           <div className="col-md-3 mt-4">
-            <div className="tile display-2 d-flex justify-content-center align-items-center rounded text-white bg-danger">
-              Rejected: {totalRequests.rejected}
+            <div className="tile d-flex justify-content-center align-items-center rounded text-white bg-danger flex-column">
+              <div className="tile-label">Rejected</div>
+              <div className="tile-value">{totalRequests.rejected}</div>
             </div>
           </div>
         </div>
@@ -185,59 +189,51 @@ const HospitalDashboard = () => {
         <div className="row">
           <div className="col-md-2 mt-4"></div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-start align-items-center rounded text-white bg-primary flex-column">
-              A+
-              <br />
-              <b>{bloodStock["A+"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-primary flex-column">
+              <div className="blood-label">A+</div>
+              <div className="blood-value">{bloodStock["A+"]}</div>
             </div>
           </div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-center align-items-center rounded text-white bg-secondary flex-column">
-              A-
-              <br />
-              <b>{bloodStock["A-"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-secondary flex-column">
+              <div className="blood-label">A-</div>
+              <div className="blood-value">{bloodStock["A-"]}</div>
             </div>
           </div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-center align-items-center rounded text-white bg-success flex-column">
-              B+
-              <br />
-              <b>{bloodStock["B+"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-success flex-column">
+              <div className="blood-label">B+</div>
+              <div className="blood-value">{bloodStock["B+"]}</div>
             </div>
           </div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-center align-items-center rounded text-white bg-danger flex-column">
-              B-
-              <br />
-              <b>{bloodStock["B-"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-danger flex-column">
+              <div className="blood-label">B-</div>
+              <div className="blood-value">{bloodStock["B-"]}</div>
             </div>
           </div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-center align-items-center rounded text-white bg-primary flex-column">
-              O+
-              <br />
-              <b>{bloodStock["O+"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-primary flex-column">
+              <div className="blood-label">O+</div>
+              <div className="blood-value">{bloodStock["O+"]}</div>
             </div>
           </div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-center align-items-center rounded text-white bg-secondary flex-column">
-              O-
-              <br />
-              <b>{bloodStock["O-"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-secondary flex-column">
+              <div className="blood-label">O-</div>
+              <div className="blood-value">{bloodStock["O-"]}</div>
             </div>
           </div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-center align-items-center rounded text-white bg-success flex-column">
-              AB+
-              <br />
-              <b>{bloodStock["AB+"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-success flex-column">
+              <div className="blood-label">AB+</div>
+              <div className="blood-value">{bloodStock["AB+"]}</div>
             </div>
           </div>
           <div className="col-md-1 mt-4">
-            <div className="bloodTile h1 d-flex justify-content-center align-items-center rounded text-white bg-danger flex-column">
-              AB-
-              <br />
-              <b>{bloodStock["AB-"]}</b>
+            <div className="bloodTile d-flex justify-content-center align-items-center rounded text-white bg-danger flex-column">
+              <div className="blood-label">AB-</div>
+              <div className="blood-value">{bloodStock["AB-"]}</div>
             </div>
           </div>
           <div className="col-md-2 mt-4"></div>

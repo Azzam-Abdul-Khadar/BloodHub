@@ -6,14 +6,200 @@
   
   .tile {
     height: 200px;
-    font-size: 32px;
     border: 2px solid #ffffff;
+    padding: 15px 5px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
+  .tile-label {
+    font-size: 1rem;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  
+  .tile-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Large screens above 1500px */
+  @media (min-width: 1500px) {
+    .tile {
+      height: 250px;
+    }
+    .tile-label {
+      font-size: 2.0rem;
+      margin-bottom: 15px;
+    }
+    .tile-value {
+      font-size: 3.0rem;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1499px) {
+    .tile-label{
+        font-size: 1.5rem;
+    }
+    .tile-value{
+      font-size: 2.8rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .tile-label {
+      font-size: 1.5rem;
+    }
+    .tile-value {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Below 767px - Change to horizontal layout */
+  @media (max-width: 767px) {
+    .tile {
+      height: auto;
+      min-height: 50px;
+      padding: 8px 15px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    .tile-label {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+      margin-right: 0;
+      text-align: left;
+      flex: 1;
+      white-space: normal;
+      line-height: 1.2;
+    }
+    .tile-value {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .tile {
+      min-height: 45px;
+      padding: 6px 12px;
+      gap: 8px;
+    }
+    .tile-label {
+      font-size: 1rem;
+    }
+    .tile-value {
+      font-size: 1.5rem;
+    }
+  }
   
   .bloodTile {
       height: 100px;
-      font-size: 18px;
       border: 2px solid #ffffff;
-    }
+      padding: 8px 5px;
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
   
+  .blood-label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .blood-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Large screens above 1500px */
+  @media (min-width: 1500px) {
+    .bloodTile {
+      height: 120px;
+    }
+    .blood-label {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+    .blood-value {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Medium to large screens between 992px and 1500px */
+  @media (min-width: 992px) and (max-width: 1499px) {
+    .blood-label {
+      font-size: 1.1rem;
+    }
+    .blood-value {
+      font-size: 1.7rem;
+    }
+  }
+  
+  /* Below 992px */
+  @media (max-width: 992px) {
+    .blood-label {
+      font-size: 1rem;
+    }
+    .blood-value {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Below 767px - Change blood tiles to horizontal layout */
+  @media (max-width: 767px) {
+    .bloodTile {
+      height: auto;
+      min-height: 45px;
+      padding: 6px 12px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .blood-label {
+      font-size: 1rem;
+      margin-bottom: 0;
+      margin-right: 0;
+      text-align: left;
+      flex: 1;
+      line-height: 1.2;
+    }
+    .blood-value {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+  }
+  
+  /* Below 576px */
+  @media (max-width: 576px) {
+    .bloodTile {
+      min-height: 40px;
+      padding: 5px 10px;
+      gap: 6px;
+    }
+    .blood-label {
+      font-size: 0.9rem;
+    }
+    .blood-value {
+      font-size: 1.2rem;
+    }
+  }
