@@ -154,8 +154,8 @@ npm install
 If separated:
 
 ```bash
-cd backend && npm install
-cd ../client && npm install
+cd backend && npm install || deps-backend
+cd ../client && npm install || deps-frontend
 ```
 
 ## 3️⃣ Configure Environment Variables
